@@ -1,0 +1,19 @@
+<plugin>
+    <id>com.example.plugin</id>
+    <name>Remove Comments Plugin</name>
+    <description>Plugin to remove comments from code files</description>
+    <version>1.0</version>
+    <vendor>Your Company</vendor>
+
+    <actions>
+        <action
+                id="com.example.plugin.RemoveCommentsAction"
+                class="com.example.plugin.RemoveCommentsAction"
+                text="Remove Comments"
+                description="Remove all comments from the current file">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <!-- Привязка сочетания клавиш Ctrl+Shift+P -->
+            <keyboard-shortcut keymap="$default" first-keystroke="ctrl shift P"/>
+        </action>
+    </actions>
+</plugin>
